@@ -7,67 +7,56 @@
     <body>
         <h1>Formulaire d'inscription</h1>
 
-<<<<<<< HEAD
         <form action="CreateAccount.php" method="post">
-=======
-        <form action="PageExacte.php" method="post">
->>>>>>> master
             <table>
                 <tr>
                     <td>
-                        <label>Prenom *</label> :
+                        <label>Pseudo *</label> :
                     </td>
                     <td>
-                        <input type="text" name="prenom" id="prenom" required />
+                        <input type="text" name="pseudo" id="pseudo" required />
                     </td>
                 </tr>
 
                 <tr>
                      <td>
-                        <label>Nom * :</label>
+                        <label>Genre * :</label>
                     </td>
                     <td>
-                        <input type="text" name="nom" id="nom" color="blue" required />
+                        <input type="text" name="genre" id="genre" />
                     </td>
                 </tr>
 
                 <tr>
                     <td>
-                            <label>Mot de passe *</label> :
+                        <label>Mail *</label> :
                     </td>
                     <td>
-                            <input type="password" name="mdp" required />
+                        <input type="email" name="mail" maxlength="25" required />
                     </td>
                 </tr>
 
                 <tr>
                     <td>
-                            <label>Date de Naissance *</label> :
+                        <label>Mot de Passe *</label> :
                     </td>
                     <td>
-                            <input type="date" name="datenaissance" id="datenaissance" required/>
+                        <input type="password" name="mdp" id="mdp" maxlength="50" required/>
                     </td>
                 </tr>
-
+                
                 <tr>
                     <td>
-                            <label>Adresse Mail *</label> :
+                        <label>Localisation *</label> :
                     </td>
                     <td>
-                            <input type="email" name="mail" id="mail" maxlength="25" required/>
+                        <input type="text" name="lieu" id="lieu" maxlength="50"/>
                     </td>
                 </tr>
-
-                <tr>
-                    <td>
-                            <label>Telephone</label> :
-                    </td>
-                    <td>
-                            <input type="tel" name="tel" id="id" />
-                    </td>
-                </tr>
+                    
             </table>
             <input type="submit" value="Send" />
         </form>
+        <a href=./index.html> Retour</a>
     </body>
 </html>
