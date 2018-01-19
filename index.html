@@ -1,36 +1,39 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        
+            <link rel="stylesheet" href="Visuel.css" />
     </head>
 
     <!-- Page principale du site -->
     <body>
         <div id="body">
             <!-- Titre encadrés d'images -->
-            <h1><img src="Icone.png" width="25"></img> Bienvenue sur mon site web consacre au Tarot <img src="Icone.png" width="25"></h1>
+            <header>
+                <h1><img src="Icone.png" width="25"></img> Bienvenue sur mon site web consacre au Tarot <img src="Icone.png" width="25"></h1>
+
+                <!-- Menu -->
+                <div id="conteneur">
+                    <div class="element"><a href="http://www.fftarot.fr/assets/documents/R-RO201206.pdf">Regles du jeu (FFTarot)</a></div>
+                    <div class="element"><a href="./Inscription.html">Inscription</a></div>
+                    <div class="element">Telecharger le jeu de tarot</div>
+                        <!--
+                            <li><a href="./PageTelechargement">Windows</a></li>
+                            <li>Linux</li>
+                            <li><a href="https://www.apple.com/">Mac OS</a></li>
+                        -->
+                    <div class="element"><a href="./ChatPublic.php">Chat Online</a></div>
+
+                    
+                </div>
+
+            </header>
+            
 
             <!-- Paragraphe de présentation du site -->
             <h2>Objectifs du site :<br></h2>
             <p>Voici mon premier site web consacre au jeu de tarot.<br/>Ici, vous pourrez apprendre les regles du tarot et telecharger le jeu de tarot que j'ai developpe.</p>
-
-            <!-- Citation -->
-            <p><br/>Une petite citation :</p>
-            <blockquote>Joueur au tarot avec ses amis est toujours bon, mais c'est toujours mieux si on gagne.</blockquote>
             
-            <!-- Menu -->
-            <h3><br>Que voulez-vous faire ?</h3>
-            <ol>
-                <li><a href="http://www.fftarot.fr/assets/documents/R-RO201206.pdf">Regles du jeu (FFTarot)</a></li>
-                <li><a href="./Inscription.html">Inscription</a></li>
-                <li>Telecharger le jeu de tarot</li>
-                    <ul>
-                        <li><a href="./PageTelechargement">Windows</a></li>
-                        <li>Linux</li>
-                        <li><a href="https://www.apple.com/">Mac OS</a></li>
-                    </ul>
-                <li><a href="./ChatPublic.php">Chat Online</a></li>
-            </ol>
+
         </div>
     </body>
 </html>

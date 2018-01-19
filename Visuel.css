@@ -8,3 +8,24 @@ h1{
     color: rgb(180, 141, 12);
     text-align: center;
 }
+
+h2{
+    text-align: center;
+}
+
+/* Mise ne page du Menu */
+#conteneur{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: black;
+    border-radius: 10px;
+}
+
+.element{
+    color: rgb(19,141,71);
+}
+
+a{
+    color: rgb(19,141,71);
+}
