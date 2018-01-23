@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Mini-chat</title>
+        <link rel="stylesheet" href="Visuel.css" />
     </head>
     <body>
     
