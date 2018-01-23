@@ -13,7 +13,23 @@ h2{
     text-align: center;
 }
 
-/* Mise ne page du Menu */
+/* Visuel du menu de Connexion */
+#log_zone{
+    position: absolute;
+    top: 3%;
+    left: 80%;
+    background: black;
+    border-radius: 10px;
+    width: 220px;
+    height: 85px;
+    text-align: center;
+}
+
+#log_zone label{
+    color: rgb(19, 141, 71)
+}
+
+/* Mise en page du Menu */
 #conteneur{
     display: flex;
     flex-direction: row;
