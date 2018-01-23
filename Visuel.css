@@ -17,11 +17,11 @@ h2{
 #log_zone{
     position: absolute;
     top: 3%;
-    left: 80%;
+    left: 83%;
     background: black;
     border-radius: 10px;
     width: 220px;
-    height: 85px;
+    height: 87px;
     text-align: center;
 }
 
