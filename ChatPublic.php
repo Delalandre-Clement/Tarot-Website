@@ -9,14 +9,14 @@
     
     <form action="ChatPublic_Post.php" method="post">
         <p>
-        <label for="Pseudo">Pseudo</label> : <input type="text" name="Pseudo" id="Pseudo" /><br />
-        <label for="Pessage">Message</label> :  <input type="text" name="Message" id="Message" /><br />
+            <label for="Pseudo">Pseudo</label> : <input type="text" name="Pseudo" id="Pseudo" /><br />
+            <label for="Pessage">Message</label> :  <input type="text" name="Message" id="Message" /><br />
 
-        <input type="submit" value="Envoyer" />
-        <br><a href="./index.html">Retour</a></li>
-        <br><br>
-        <p><strong> Les 20 derniers messages : </strong></p>
-	</p>
+            <input type="submit" value="Envoyer" />
+            <br><a href="./index.html">Retour</a></li>
+            <br><br>
+            <p><strong> Les 20 derniers messages : </strong></p>
+        </p>
     </form>
 
     <?php
