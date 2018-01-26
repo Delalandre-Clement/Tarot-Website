@@ -21,7 +21,7 @@
             echo 'Votre compte a bien été créé !';
         ?>
         
-    <a href=./index.html> Retour</a>
+    <a href=./index.php> Retour</a>
     </body>
 </html>
 
