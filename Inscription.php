@@ -32,7 +32,7 @@
                         <label>Mail *</label> :
                     </td>
                     <td>
-                        <input type="email" name="mail" maxlength="25" required />
+                        <input type="email" name="mail" id='mail' maxlength="25" required />
                     </td>
                 </tr>
 
