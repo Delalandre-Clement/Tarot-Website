@@ -8,4 +8,7 @@
         <td><label>Mot de passe :</label></td>
         <td><div id="mdpasse"><input type="password" name="mdp" id="mdp" required /></div></td>
     </tr>
+    <tr>
+        <input type="submit" value="Connexion"/>
+    </tr>
 </div>
