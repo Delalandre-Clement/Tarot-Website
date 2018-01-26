@@ -3,7 +3,7 @@ body{
     background-color: rgb(19, 141, 71);
 }
 
-/* Title CSS */
+/* Titres */
 h1{
     color: rgb(180, 141, 12);
     text-align: center;
@@ -29,7 +29,7 @@ h2{
     color: rgb(19, 141, 71)
 }
 
-/* Mise en page du Menu */
+/* Mise en page du Menu Principal */
 #conteneur{
     display: flex;
     flex-direction: row;
@@ -38,14 +38,21 @@ h2{
     border-radius: 10px;
 }
 
-.element{
+.element, a{
     color: rgb(19,141,71);
 }
 
-a{
-    color: rgb(19,141,71);
+/* Mise en forme des boutons */
+input[type=submit], input[type=reset], input[type=button]{
+    background-color: black;
+    color: rgb(19, 141, 71);
+    border-radius: 15px;
+    border-color: rgb(19, 141, 71);
+    height: 30px;
+    width: 85px;
 }
 
+<<<<<<< HEAD
 /* Bas de Page */
 footer{
     background-color: black;
@@ -53,3 +60,9 @@ footer{
     text-align: center;
     background-position: 90%;
 }
+=======
+/* Mise en Forme du Formulaire d'inscription */
+table{
+    text-align: center;
+}
+>>>>>>> Visuel-Inscription
