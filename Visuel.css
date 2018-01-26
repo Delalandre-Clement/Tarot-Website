@@ -45,3 +45,11 @@ h2{
 a{
     color: rgb(19,141,71);
 }
+
+/* Bas de Page */
+footer{
+    background-color: black;
+    color: rgb(19, 141, 71);
+    text-align: center;
+    background-position: 90%;
+}
