@@ -17,3 +17,13 @@ table{
 a{
     color: black;
 }
+
+/* Mise en forme des boutons */
+input[type=submit], input[type=reset], input[type=button]{
+    background-color: black;
+    color: rgb(19, 141, 71);
+    border-radius: 15px;
+    border-color: rgb(19, 141, 71);
+    height: 30px;
+    width: 85px;
+}
