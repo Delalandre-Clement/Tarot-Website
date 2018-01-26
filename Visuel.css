@@ -26,6 +26,7 @@ h2{
 }
 
 #log_zone label{
+    color: rgb(19, 141, 71);
 }
 
 /* Mise en page du Menu Principal */
@@ -59,9 +60,13 @@ footer{
     text-align: center;
     background-position: 90%;
 }
+<<<<<<< HEAD
 =======
 /* Mise en Forme du Formulaire d'inscription */
 table{
     text-align: center;
 }
 >>>>>>> Visuel-Inscription
+=======
+
+>>>>>>> 7d417697fdbdd9cd78f4c5a3fd96da70e3102584
