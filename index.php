@@ -16,7 +16,7 @@ session_start();    //Demarrage de la session
 
             <!-- Insertion de la zone de connexion -->
             <?php 
-                if(!isset($_POST['pseudo'])){    
+                if(!isset($_SESSION['pseudo'])){    
                     include("ZoneConnexion.php");   // Affiche la zone de connexion si pas connecté
                 }
                 else{
