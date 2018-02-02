@@ -15,7 +15,7 @@ h2{
 }
 
 /* Visuel du menu de Connexion */
-#log_zone{
+#log_zone, #connect_zone{
     position: absolute;
     top: 3%;
     left: 83%;
@@ -37,10 +37,14 @@ input[type=submit]{
     border-left-color: black;
     border-right-color: black;
     border-bottom-color: black;
-    height: 40px;
-    width: 85px;
+    height: 37px;
+    width: 90px;
     cursor: pointer;
 }
+
+#connect_zone label{
+    color: rgb(19, 141, 71);
+} 
 
 /* Mise en page du Menu Principal */
 #conteneur{
