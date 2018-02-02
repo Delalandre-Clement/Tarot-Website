@@ -1,3 +1,7 @@
+<?php
+session_start();    //Demarrage de la session
+?>
+
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -8,10 +12,17 @@
     <body>
         <!-- Titre encadrés d'images -->
         <header>
-            <h1><img src="Icone.png" width="40"></img> Tarot <img src="Icone.png" width="40"></h1>
+            <h1><img src="Icone.png" width="60"></img>   Tarot   <img src="Icone.png" width="60"></h1>
 
             <!-- Insertion de la zone de connexion -->
-            <?php include("ZoneConnexion.php"); ?>
+            <?php 
+                if(!isset($_POST['pseudo'])){    
+                    include("ZoneConnexion.php");   // Affiche la zone de connexion si pas connecté
+                }
+                else{
+                    echo "Vous êtes connecté";      // Affiche la zone personalisée si connecté
+                }
+            ?>
 
             <!-- Insertion du Menu -->
             <?php include("Menu.php"); ?>
@@ -22,5 +33,6 @@
             <!-- Insertion du Pied de page -->
             <?php include("Pied_de_page.php"); ?>
         </footer>
+        <?php session_destroy() ?>
     </body>
 </html>
