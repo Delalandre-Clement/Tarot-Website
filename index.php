@@ -20,7 +20,7 @@ session_start();    //Demarrage de la session
                     include("ZoneConnexion.php");   // Affiche la zone de connexion si pas connecté
                 }
                 else{
-                    echo "Vous êtes connecté";      // Affiche la zone personalisée si connecté
+                    include("ZoneConnecte.php");      // Affiche la zone personalisée si connecté
                 }
             ?>
 
@@ -33,6 +33,5 @@ session_start();    //Demarrage de la session
             <!-- Insertion du Pied de page -->
             <?php include("Pied_de_page.php"); ?>
         </footer>
-        <?php session_destroy() ?>
     </body>
 </html>
