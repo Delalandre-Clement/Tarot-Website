@@ -1,3 +1,7 @@
+<?php
+session_start();    //Demarrage de la session
+?>
+
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -60,5 +64,9 @@
             <input type="reset" value="Reinitialiser"/>
             <input type="button" value="Annuler" onClick="window.history.back()">
         </form>
+        <footer>
+            <!-- Insertion du Pied de page -->
+            <?php include("Pied_de_page.php"); ?>
+        </footer>
     </body>
 </html>

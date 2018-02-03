@@ -1,3 +1,8 @@
+<?php
+session_start();    //Demarrage de la session
+?>
+
+<!DOCTYPE HTML>
 <html>
     <head>
             <style>
@@ -16,6 +21,10 @@
         ?>
         
     <a href=./index.php> Retour</a>
+    <footer>
+        <!-- Insertion du Pied de page -->
+        <?php include("Pied_de_page.php"); ?>
+    </footer>
     </body>
 </html>
 
