@@ -5,14 +5,14 @@ session_start();    //Demarrage de la session
 <!DOCTYPE HTML>
 <html>
     <head>
-            <link rel="stylesheet" href="Visuel.css" />
+            <link rel="stylesheet" href="../Visuel/Visuel.css" />
     </head>
 
     <!-- Page principale du site -->
     <body>
         <!-- Titre encadrés d'images -->
         <header>
-            <h1><img src="Icone.png" width="60"></img>   Tarot   <img src="Icone.png" width="60"></h1>
+            <h1><img src="../Image/Icone.png" width="60"></img>   Tarot   <img src="../Image/Icone.png" width="60"></h1>
 
             <!-- Insertion de la zone de connexion -->
             <?php 

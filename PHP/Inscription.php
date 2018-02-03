@@ -5,7 +5,7 @@ session_start();    //Demarrage de la session
 <!DOCTYPE HTML>
 <html>
     <head>
-        <link rel="stylesheet" href="VisuelInscription.css" />
+        <link rel="stylesheet" href="../Visuel/VisuelInscription.css" />
     </head>
 
     <body>

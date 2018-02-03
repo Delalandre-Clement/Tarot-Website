@@ -5,7 +5,7 @@ session_start();    //Demarrage de la session
 <!DOCTYPE HTML>
 <html>
     <head>
-        <link rel="stylesheet" href="Visuel.css" />
+        <link rel="stylesheet" href="../Visuel/Visuel.css" />
     </head>
 
     <!-- Page principale du site -->
