@@ -17,6 +17,7 @@ session_start();    //Demarrage de la session
             // Ajout des informations du formulaire dans la Database
             $req = $bdd->prepare('INSERT INTO utilisateurs(Pseudo, Genre, Mail, Password, Region) VALUES(?,?,?,?,?)');//les '?' sont les zones de remplissage 
             $req->execute(array($_POST['pseudo'],$_POST['genre'],$_POST['mail'],$_POST['mdp'],$_POST['lieu']));//où viennent se loger les variables.
+            $_SESSION['pseudo']=$_POST['pseudo'];
             echo 'Votre compte a bien été créé !';
         ?>
         
