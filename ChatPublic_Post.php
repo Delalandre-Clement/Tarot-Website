@@ -1,4 +1,6 @@
 <?php
+    session_start();    //Demarrage de la session
+
     // Connexion à la base de données
     try
     {
@@ -10,8 +12,8 @@
     }
 
     // Insertion du message à l'aide d'une requête préparée
-    $req = $bdd->prepare('INSERT INTO chatpublic (Pseudo, Message) VALUES(?, ?)');
-    $req->execute(array($_POST['Pseudo'], $_POST['Message']));
+    $req = $bdd->prepare('INSERT INTO chatpublic (Pseudo, Message) VALUES(?,?)');
+    $req->execute(array($_SESSION['pseudo'], $_POST['Message']));
 
     // Redirection du visiteur vers la page du minichat
     header('Location: ChatPublic.php');

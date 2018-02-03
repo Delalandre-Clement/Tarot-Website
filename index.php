@@ -20,7 +20,7 @@ session_start();    //Demarrage de la session
                     include("ZoneConnexion.php");   // Affiche la zone de connexion si pas connecté
                 }
                 else{
-                    include("ZoneConnecte.php");      // Affiche la zone personalisée si connecté
+                    include("ZoneConnecte.php");    // Affiche la zone personalisée si connecté
                 }
             ?>
 

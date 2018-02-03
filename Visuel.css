@@ -64,6 +64,14 @@ input[type=submit]{
     font-size: 30px;
 }
 
+/* Section */
+section{
+    position: absolute;
+    top: 25%;
+    width: 99%;
+    text-align: center;
+}
+
 /* Bas de Page */
 footer{
     background-color: black;

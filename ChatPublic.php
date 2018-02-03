@@ -10,42 +10,55 @@ session_start();    //Demarrage de la session
         <link rel="stylesheet" href="Visuel.css" />
     </head>
     <body>
-    
-    <form action="ChatPublic_Post.php" method="post">
-        <p>
-            <label for="Pseudo">Pseudo</label> : <input type="text" name="Pseudo" id="Pseudo" /><br />
-            <label for="Message">Message</label> :  <input type="text" name="Message" id="Message" /><br />
 
-            <input type="submit" value="Envoyer" />
-            <br><a href="./index.php">Retour</a></li>
-            <br><br>
-            <p><strong> Les 20 derniers messages : </strong></p>
-        </p>
-    </form>
+        <!-- Tête de la page -->
+        <header>
+            <h1>Chat Public</h1>
+            <?php include("ZoneConnecte.php"); ?>
+            <?php include("Menu.php"); ?>
+        </header>
 
-    <?php
-    // Connexion à la base de données
-    try
-    {
-        $bdd = new PDO('mysql:host=localhost;dbname=tarotwebsite;charset=utf8', 'clem7622', 'Tarot76');
-    }
-    catch(Exception $e)
-    {
-            die('Erreur : '.$e->getMessage());
-    }
+        <!-- Centre de la page -->
+        <section>
+            <!--Formulaire -->
+            <form action="ChatPublic_Post.php" method="post">
+                <p>
+                    <label for="Message">Message</label> :  <br><br><input type="text" name="Message" id="Message" />
+                    <br><br><input type="submit" value="Envoyer" /><br><br>
+                    <p><strong> Les 20 derniers messages : </strong></p>
+                </p>
+            </form>
 
-    // Récupération des 10 derniers messages
-    $reponse = $bdd->query('SELECT Pseudo, Message FROM chatpublic ORDER BY ID DESC LIMIT 0, 20');
+            <!-- Affichage des derniers messages -->
+            <?php
+            // Connexion à la base de données
+            try
+            {
+                $bdd = new PDO('mysql:host=localhost;dbname=tarotwebsite;charset=utf8', 'clem7622', 'Tarot76');
+            }
+            catch(Exception $e)
+            {
+                    die('Erreur : '.$e->getMessage());
+            }
 
-    // Affichage de chaque message (toutes les données sont protégées par htmlspecialchars)
-    while ($donnees = $reponse->fetch())
-    {
-        echo '<p><strong>' . htmlspecialchars($donnees['Pseudo']) . '</strong> : ' . htmlspecialchars($donnees['Message']) . '</p>';
-    }
+            // Récupération des 10 derniers messages
+            $reponse = $bdd->query('SELECT Pseudo, Message FROM chatpublic ORDER BY ID DESC LIMIT 0, 20');
 
-    $reponse->closeCursor();
+            // Affichage de chaque message (toutes les données sont protégées par htmlspecialchars)
+            while ($donnees = $reponse->fetch())
+            {
+                echo '<p><strong>' . htmlspecialchars($donnees['Pseudo']) . '</strong> : ' . htmlspecialchars($donnees['Message']) . '</p>';
+            }
 
-    ?>
+            $reponse->closeCursor();
+
+            ?>
+        </section>
+
+        <!-- Pied de page -->
+        <footer>
+            <?php include("Pied_de_page.php"); ?>
+        </footer>
 
     </body>
 </html>
