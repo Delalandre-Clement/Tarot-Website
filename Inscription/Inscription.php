@@ -20,6 +20,7 @@ session_start();    //Demarrage de la session
         <!-- Centre de la page -->
         <section>
             <form action="CreateAccount.php" method="post">
+            
                 <table>
                     <tr>
                         <td>

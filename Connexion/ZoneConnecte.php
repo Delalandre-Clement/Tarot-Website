@@ -1,6 +1,13 @@
 <!-- Zone Connecte -->
 <div id="connect_zone">
-    <form action="./Connexion/Deconnexion.php" method="post">
+    <?php
+        if($_SERVER['PHP_SELF']=="/Tarot-Website/index.php"){
+            echo '<form action=' . '"./Connexion/Deconnexion.php"' . ' method=' . '"post"' . '>';
+        }
+        else{
+            echo '<form action=' . '"../Connexion/Deconnexion.php"' . ' method=' . '"post"' . '>';
+        }
+    ?>
         <tr>
             <?php 
                 if($_SERVER['PHP_SELF']=="/Tarot-Website/index.php"){

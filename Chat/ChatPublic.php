@@ -36,10 +36,11 @@ if(isset($_SESSION['utilisateur'])){
             </form>
 
             <!-- Affichage des derniers messages -->
-            <?php
-                include("./AfficheMessage.php");
-            ?>
+            <div id="messages">
+                <?php include("./AfficheMessage.php"); ?>
+            </div>
         </section>
+        
 
         <!-- Pied de page -->
         <footer>

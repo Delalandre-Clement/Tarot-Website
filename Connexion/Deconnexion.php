@@ -6,5 +6,11 @@
 <!DOCTYPE html>
 <?php
     // Retour à l apage principale du site
-    header('Location: ../index.php');
+    if($_SERVER['PHP_SELF']=="/Tarot-Website/index.php"){
+        header('Location: ./index.php');
+    }
+    else{
+        header('Location: ../index.php');
+    }
+    
 ?>
