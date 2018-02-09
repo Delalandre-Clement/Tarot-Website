@@ -1,7 +1,12 @@
 <!-- Menu -->
 <div id="conteneur">
-    <div class="element"><a href="../index.php">Accueil</a></div>
     <?php 
+        if($_SERVER['PHP_SELF']=="/Tarot-Website/index.php"){
+            echo '<div class=' . '"element"' . '><a href=' . "./index.php" . '>' . "Accueil" . '</a></div>';
+        }
+        else{
+            echo '<div class=' . '"element"' . '><a href=' . "../index.php" . '>' . "Accueil" . '</a></div>';
+        }
         if(!isset($_SESSION['pseudo'])){    
             echo '<div class=' . '"element"' . '><a href=' . "./Inscription/Inscription.php" . '>' . "Inscription" . '</a></div>';
         }
