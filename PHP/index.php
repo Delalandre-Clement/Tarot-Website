@@ -1,5 +1,11 @@
 <?php
+require_once 'Utilisateur.php';
+
 session_start();    //Demarrage de la session
+
+if(isset($_SESSION['utilisateur'])){
+    $utilisateur = $_SESSION['utilisateur'];
+}
 ?>
 
 <!DOCTYPE HTML>
@@ -16,7 +22,7 @@ session_start();    //Demarrage de la session
 
             <!-- Insertion de la zone de connexion -->
             <?php 
-                if(!isset($_SESSION['pseudo'])){    
+                if(!isset($_SESSION['utilisateur'])){    
                     include("ZoneConnexion.php");   // Affiche la zone de connexion si pas connecté
                 }
                 else{

@@ -1,5 +1,5 @@
 <!-- Zone Connexion -->
-<form action="VerificationConnexion.php" method="post">
+<form action="login.php" method="post">
     <div id="log_zone">
         <tr>
             <td><label>Utilisateur :</label></td>
