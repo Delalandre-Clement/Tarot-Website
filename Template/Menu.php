@@ -7,7 +7,8 @@
         else{
             echo '<div class=' . '"element"' . '><a href=' . "../index.php" . '>' . "Accueil" . '</a></div>';
         }
-        if(!isset($_SESSION['pseudo'])){    
+        
+        if(!isset($_SESSION['utilisateur'])){
             echo '<div class=' . '"element"' . '><a href=' . "./Inscription/Inscription.php" . '>' . "Inscription" . '</a></div>';
         }
         else{

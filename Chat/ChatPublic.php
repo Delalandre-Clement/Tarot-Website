@@ -1,5 +1,11 @@
 <?php
+require_once '../Classes/Utilisateur.php';
+
 session_start();    //Demarrage de la session
+
+if(isset($_SESSION['utilisateur'])){
+    $utilisateur = $_SESSION['utilisateur'];
+}
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +21,7 @@ session_start();    //Demarrage de la session
         <header>
             <h1>Chat Public</h1>
             <?php include("../Connexion/ZoneConnecte.php"); ?>
-            <?php include("../MiseEnpage/Menu.php"); ?>
+            <?php include("../Template/Menu.php"); ?>
         </header>
 
         <!-- Centre de la page -->
@@ -57,7 +63,7 @@ session_start();    //Demarrage de la session
 
         <!-- Pied de page -->
         <footer>
-            <?php include("../MiseEnPage/Pied_de_page.php"); ?>
+            <?php include("../Template/Pied_de_page.php"); ?>
         </footer>
 
     </body>

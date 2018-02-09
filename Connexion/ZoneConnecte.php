@@ -2,7 +2,14 @@
 <div id="connect_zone">
     <form action="./Connexion/Deconnexion.php" method="post">
         <tr>
-            <td><br><img src="./Image/Profil2.png" width="60"></img> <td>
+            <?php 
+                if($_SERVER['PHP_SELF']=="/Tarot-Website/index.php"){
+                    echo '<td><br><img src=' . '"./Image/Profil2.png"' . 'width=' . '"60" ' . '></img> <td>';
+                }
+                else{
+                    echo '<td><br><img src=' . '"../Image/Profil2.png"' . 'width=' . '"60" ' . '></img> <td>';
+                }
+            ?>
             <td><br><label><?php echo $utilisateur->nom;?></label></td>
         </tr>
         <tr>
