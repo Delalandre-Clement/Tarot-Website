@@ -1,5 +1,5 @@
 <!-- Zone Connexion -->
-<form action="login.php" method="post">
+<form action="./Connexion/Login.php" method="post">
     <div id="log_zone">
         <tr>
             <td><label>Utilisateur :</label></td>

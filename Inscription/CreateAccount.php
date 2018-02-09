@@ -19,10 +19,10 @@ session_start();    //Demarrage de la session
             echo 'Votre compte a bien été créé !';
         ?>
         
-        <input type="button" value="Retour" onClick="self.location.href='index.php'">
+        <input type="button" value="Retour" onClick="self.location.href='../index.php'">
     <footer>
         <!-- Insertion du Pied de page -->
-        <?php include("Pied_de_page.php"); ?>
+        <?php include("../MiseEnPage/Pied_de_page.php"); ?>
     </footer>
     </body>
 </html>

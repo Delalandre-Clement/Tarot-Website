@@ -13,8 +13,8 @@ session_start();    //Demarrage de la session
          <!-- Tête de la page -->
         <header>
             <h1>Formulaire d'inscription</h1>
-            <?php include("ZoneConnexion.php"); ?>
-            <?php include("Menu.php"); ?>
+            <?php include("../Connexion/ZoneConnexion.php"); ?>
+            <?php include("../Template/Menu.php"); ?>
         </header>
 
         <!-- Centre de la page -->
@@ -75,7 +75,7 @@ session_start();    //Demarrage de la session
 
         <footer>
             <!-- Insertion du Pied de page -->
-            <?php include("Pied_de_page.php"); ?>
+            <?php include("../Template/Pied_de_page.php"); ?>
         </footer>
     </body>
 </html>

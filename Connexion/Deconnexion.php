@@ -6,5 +6,5 @@
 <!DOCTYPE html>
 <?php
     // Retour à l apage principale du site
-    header('Location: index.php');
+    header('Location: ../index.php');
 ?>

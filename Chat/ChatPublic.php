@@ -14,8 +14,8 @@ session_start();    //Demarrage de la session
         <!-- Tête de la page -->
         <header>
             <h1>Chat Public</h1>
-            <?php include("ZoneConnecte.php"); ?>
-            <?php include("Menu.php"); ?>
+            <?php include("../Connexion/ZoneConnecte.php"); ?>
+            <?php include("../MiseEnpage/Menu.php"); ?>
         </header>
 
         <!-- Centre de la page -->
@@ -57,7 +57,7 @@ session_start();    //Demarrage de la session
 
         <!-- Pied de page -->
         <footer>
-            <?php include("Pied_de_page.php"); ?>
+            <?php include("../MiseEnPage/Pied_de_page.php"); ?>
         </footer>
 
     </body>
