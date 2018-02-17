@@ -30,7 +30,7 @@ if(isset($_SESSION['utilisateur'])){
             <form action="ChatPublic_Post.php" method="post">
                 <p>
                     <label for="Message">Message</label> :  <br><br><input type="text" name="Message" id="Message" />
-                    <br><br><input type="submit" value="Envoyer" /><br><br>
+                    <br><br><input type="submit" value="Envoyer" /><br><br><br><br>
                     <p><strong> Les 20 derniers messages : </strong></p>
                 </p>
             </form>

@@ -34,7 +34,15 @@ if(isset($_SESSION['utilisateur'])){
             <?php include("./Template/Menu.php"); ?>
 
         </header>
-        
+
+        <section>
+            <h3>Bonjour et bienvenue sur mon site web consacré au tarot.<h3>
+            <p>Ici, vous pourrez décourir les règles du tarot ainsi que suivre l'avancement de mon projet de jeu de tarot.<p>
+            <p>Si vous souhaitez vous inscrire, un espace membre comprenant un chat avec les autres membres et un accès à une version non finale du jeu est disponible.<br> <p>
+            <p>Pour toute personne souhaitant participer à l'avancement de mon projet, vous avez la possibilitée d'accéder à mon dépot Github contenant mon répertoire de travail.<p>
+            <p> Débutant ou expérimenté, n'hésitez pas !<p>
+        </section>
+
         <footer>
             <!-- Insertion du Pied de page -->
             <?php include("./Template/Pied_de_page.php"); ?>
