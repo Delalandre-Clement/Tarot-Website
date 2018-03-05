@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  lun. 05 mars 2018 à 16:51
+-- Généré le :  lun. 05 mars 2018 à 16:56
 -- Version du serveur :  5.7.19
 -- Version de PHP :  5.6.31
 
@@ -35,24 +35,6 @@ CREATE TABLE IF NOT EXISTS `chatpublic` (
   `Message` text NOT NULL COMMENT 'Message',
   PRIMARY KEY (`ID`)
 ) ENGINE=MyISAM AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
-
---
--- Déchargement des données de la table `chatpublic`
---
-
-INSERT INTO `chatpublic` (`ID`, `Pseudo`, `Message`) VALUES
-(5, 'Youri', 'Coucou'),
-(9, 'Yanis', 'Salut'),
-(10, 'Clement', 'Test nouveau mode de publication'),
-(11, 'Clement', 'Valide'),
-(12, 'Clement', 'Test d\'affichage'),
-(25, 'Alexi', 'Test d\'affichage'),
-(26, 'Alexi', 'Test d\'affichage'),
-(16, 'Clement', 'Hallo'),
-(18, 'Clement', 'Long'),
-(20, 'Clement', 'Je vais mettre un message qui es très long pour pouvoir tester le fonctionnement de mon chat et savoir si le texte qui est très long (vraiment très long) va dépasser de l\'écran ou alors si il va penser tout seul à sauter la ligne, je pense avoir écrit suffisament de mot pour que le texte soit suffisament long mais je préfère continuer légèrement pour en être certain, je pense que vous comprenez !'),
-(21, 'Clement', 'Un petit message de plus !'),
-(24, 'Alexi', 'tr');
 
 -- --------------------------------------------------------
 
