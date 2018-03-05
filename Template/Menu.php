@@ -18,7 +18,7 @@
     <div class="element"><a href="http://www.fftarot.fr/assets/documents/R-RO201206.pdf">Regles du jeu (FFTarot)</a></div>
     <?php 
         if(isset($_SESSION['utilisateur'])){
-            echo '<div class=' . '"element"' . '>Telecharger le jeu de tarot</div>';
+            echo '<div class=' . '"element"' . '><a href=' . '"./Telechargement/Jeu_Tarot.zip"' . 'download=' . '"Jeu_Tarot"' . '>Telecharger le jeu de tarot</div>';
         }
     ?>
 </div>
